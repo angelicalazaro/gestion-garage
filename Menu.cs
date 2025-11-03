@@ -160,10 +160,36 @@ public class Menu
     private void SelectionnerVehicule()
     {
         Console.WriteLine("\n------QUEL EST L'ID DU VÉHICULE ?------");
-        GetChoix();
-        TrouverVehiculeParId(GetChoix());
-        
+        if (garage.Vehicules.Count == 0)
+        {
+            Console.WriteLine("Aucun véhicule dans le garage");
+            return;
+        }
+        Console.WriteLine("\nVéhicules disponibles : ");
+        foreach (var vehicule in garage.Vehicules)
+        {
+            Console.WriteLine($" ID {vehicule.Id} : {vehicule.Nom}");
+        }
+        try
+        {
+            int id = GetChoix();
+            Vehicule? vehicule = TrouverVehiculeParId(id);
+            if (vehicule == null)
+            {
+                Console.WriteLine("Véhicule non trouvé avec cet ID");
+            }
+            else
+            {
+                vehicule.Afficher();
+            }
 
+        }
+        catch (FormatException ex)
+        {
+            Console.WriteLine($"Erreur : {ex.Message}");
+            return;
+        }
+        
     }
 
     // --- 5. Afficher les options d'un véhicule ---
