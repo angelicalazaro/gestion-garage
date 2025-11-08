@@ -1,7 +1,7 @@
 using GestionGarage.Models.Enums;
 
 namespace GestionGarage.Models.Vehicules;
-
+[Serializable]
 public abstract class Vehicule : IComparable<Vehicule>
 {
     private static int _increment = 0;

@@ -1,7 +1,7 @@
 using GestionGarage.Models.Enums;
 
 namespace GestionGarage.Models;
-
+[Serializable]
 public class Moteur
 {
     private static int _increment = 0;

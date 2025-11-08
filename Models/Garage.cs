@@ -1,7 +1,7 @@
 using GestionGarage.Models.Vehicules;
 
 namespace GestionGarage.Models;
-
+[Serializable]
 public class Garage
 {
     public string Nom { get; set; }

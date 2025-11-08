@@ -1,7 +1,7 @@
 using GestionGarage.Models.Enums;
 
 namespace GestionGarage.Models.Vehicules;
-
+[Serializable]
 public class Moto : Vehicule
 {
     public int Cylindree { get; set; }

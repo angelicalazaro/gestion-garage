@@ -1,5 +1,5 @@
 namespace GestionGarage.Models;
-
+[Serializable]
 public class Option
 {
     private static int _increment = 0;
