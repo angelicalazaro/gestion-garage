@@ -6,7 +6,9 @@ A complete garage management application developed in C#, featuring advanced OOP
 
 📸 Aperçu / Preview
 <div align="center"> <img src="Images/menu1.png" alt="Main Menu 1" width="400"> <img src="Images/menu2.png" alt="Main Menu 2" width="400"> </div>
+
 🎯 🇫🇷 Fonctionnalités / 🇬🇧 Features
+
 | 🇫🇷 Français                                             | 🇬🇧 English                                          |
 | --------------------------------------------------------- | ----------------------------------------------------- |
 | ✅ Gestion de 3 types de véhicules (Voiture, Camion, Moto) | ✅ Manage 3 types of vehicles (Car, Truck, Motorcycle) |
